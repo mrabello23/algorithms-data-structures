@@ -1,0 +1,19 @@
+{
+  "name": "algorithms-data-structures",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dypg": "node src/algorithms/dynamic-programming.js",
+    "sumup": "node src/algorithms/sum-up.js",
+    "lsrch": "node src/algorithms/linear-search.js",
+    "bsrch": "node src/algorithms/binary-search.js",
+    "ssort": "node src/algorithms/selection-sort.js",
+    "lklt": "node src/data-structures/linked-list.js",
+    "stk": "node src/data-structures/stack.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
