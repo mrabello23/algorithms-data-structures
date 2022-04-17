@@ -59,14 +59,14 @@
 
 # graphs
 
-- similar to linked list
 - collection of nodes with edges in between
-- nodes pointing to other nodes
+- good to represent relationship beteween data
 - the pointers are called "edges"
+- edges is the connection between 2 nodes
 - edges can have "weigths" (numbers) inside of them
 - directed graphs: nodes are connected in one direction
 - undirected graphs: nodes are connected in both directions
-- good to represent relationship beteween data
+- cycle: when an edge points to same node
 
 # Depth-first search (dfs) graph
 

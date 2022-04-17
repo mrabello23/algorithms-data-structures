@@ -7,9 +7,11 @@
     "start": "node src/index.js",
     "dypg": "node src/algorithms/dynamic-programming.js",
     "sumup": "node src/algorithms/sum-up.js",
+    "ddiff": "node src/algorithms/diagonal-diff.js",
     "lsrch": "node src/algorithms/linear-search.js",
     "bsrch": "node src/algorithms/binary-search.js",
     "ssort": "node src/algorithms/selection-sort.js",
+    "frchr": "node src/algorithms/first-recurring-character.js",
     "lklt": "node src/data-structures/linked-list.js",
     "stk": "node src/data-structures/stack.js"
   },

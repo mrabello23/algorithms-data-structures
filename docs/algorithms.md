@@ -17,7 +17,5 @@
 8. Suffix Trees (String problems solving)
 9. Dynamic Programming (DP)
 10. Sorting Algorithms (Quick, Merge, Bubble)
-
-## Commom Problems
-
-- Knapsack problem
+11. Dijkstra's Algorithm
+12. 0-1 Knapsack Problem
