@@ -17,6 +17,17 @@
 8. Suffix Trees (String problems solving)
 9. Dynamic Programming (DP)
 10. Sorting Algorithms (Quick, Merge, Bubble)
-11. Dijkstra's Algorithm
-12. 0-1 Knapsack Problem
-13. Two Pointers
+
+# Sorting Algorithms
+
+- Insertion Sort is best for small problem sizes or nearly-sorted data.
+- Selection Sort is best when swapping items is very costly.
+- Bubble Sort is similar to Insertion Sort with slightly more overhead.
+- Shell Sort has low overhead and may be good for small data sets.
+- Merge Sort can be excellent if using O(n) extra space is OK.
+- Heap Sort is simple, fast, and sorts in-place, but it is not stable.
+- Quick Sort is a good general-purpose sort with low overhead.
+- Quick3 is the preferred version of Quick Sort because it is adaptive.
+- Dual Pivot Quick Sort is a bit faster than the original Quick Sort.
+- Why is Quick Sort so popular? It’s on average a very fast algorithm.
+- Tim Sort is a blazing-fast, space-efficient, stable sorting algorithm.

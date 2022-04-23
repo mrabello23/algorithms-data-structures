@@ -57,7 +57,7 @@
 - adding items to the top is called push(element)
 - removing items from the top is called pop()
 - used in Graph Traversal algorithm called DFS
-- efficient add and remove operations
+- efficient add and remove operations (contant operations on the top element)
 - process data in same order that received
 - beneficial as a temporary container
 
@@ -108,17 +108,19 @@
 
 # trees
 
-- kind of a hierarchycal graph
-- data goes down in one direction
-- represented like a family (parents, children)
 - node based data structure
-- connected graph without cycles
+- kind of a hierarchycal graph connected without cycles
+- data goes down in one direction (left or right)
 - can keep order
-- good for search, insertion and deletion
-- every tree has a root node with 0 or more child nodes
 - cannot contain cycles
-- binary tree: each node has up to two nodes
+- balanced tree: good for search, insertion and deletion
+- every tree has a root node with 0 or more child nodes
+- binary tree: each node has up to two nodes, usually use in-order traversal
 - benefit of Tree over a Hash Table is besides doing quick search, insertion, and deletion, it can also maintain order
+- traversal:
+  - in-order: visit left node first, then go to the root node and then right node at last
+  - pre-order: visit root node first, then go to the left node and then right node at last
+  - post-order: visit left node first, then go to the right node and then root node at last
 
 # binary search tree
 

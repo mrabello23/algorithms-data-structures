@@ -1,15 +1,19 @@
 class HashTable {
   constructor() {
     this.table = [];
+    this.size = 0;
   }
 
-  hash() {}
-  setItem(key, value) {}
-  getItem(key) {}
+  // private method
+  _hash(key) {}
+  set(key, value) {}
+  get(key) {}
+  remove(key) {}
+  print() {}
 }
 
 const table = new HashTable();
-table.setItem("firstName", "Marcel");
-table.setItem("lastName", "Oliveira");
+table.set("firstName", "Marcel");
+table.set("lastName", "Oliveira");
 
-table.getItem("firstName");
+table.get("firstName");
