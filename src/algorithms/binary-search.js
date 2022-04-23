@@ -1,26 +1,27 @@
 // Logarithmic Time Complexity => O(log n)
-const binarySearch = (value, list) => {
+// Use case: Find a value on a sorted list of values
+const binarySearch = (target, list) => {
   let first = 0;
   let last = list.length - 1;
-  let position = -1;
-  let found = false;
   let middle;
 
-  while (!found && first <= last) {
+  while (first <= last) {
     middle = Math.floor((first + last) / 2);
 
-    if (list[middle] === value) {
-      found = true;
-      position = middle;
-    } else if (list[middle] > value) {
+    if (list[middle] === target) {
+      return middle;
+    } else if (list[middle] > target) {
       last = middle - 1;
     } else {
       first = middle + 1;
     }
   }
 
-  return position;
+  return -1;
 };
 
-const dataset = [1, 2, 5, 15, 2, 58, 22, 111, 34, 77];
-console.log(binarySearch(15, dataset));
+// Need to be sorted array
+const dataset = [1, 2, 5, 15, 22, 34, 58, 77, 111];
+console.log(`Found at position ${binarySearch(15, dataset)}`);
+console.log(`Found at position ${binarySearch(58, dataset)}`);
+console.log(`Found at position ${binarySearch(3, dataset)}`);

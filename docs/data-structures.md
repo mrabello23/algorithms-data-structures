@@ -1,19 +1,3 @@
-# linked list
-
-- good to adding and removing nodes at beginning
-- node based data structure
-- not to good retrieving nodes and searching
-- every node store the memory address of the next node
-- node: atomic unit of a linked list
-- node contains a value and pointer:
-  - value: a simple value
-  - pointer: connect to the next node of the chain
-- head: first node of a linked list
-- tail: last node of a linked list
-- a tail doesn't have next pointer (none or null)
-- unlike the arrays, the memory cells are not next to each other but spread across different cells
-- benefit of Linked List over an array is that you can delete and insert elements from the beginning in one step
-
 # array
 
 - basic data structure
@@ -31,30 +15,61 @@
 - no keep any ordering
 - are faster than the arrays for lookups
 
+# map
+
+- Map objects hold a key/value pairs
+- Keep original order of a keys
+- objects or primitives can be used as key or value
+- Map arbitrary values to other values
+- JS Objects only support 1 key object
+- If try to assign multiples objects as key of other simple object, it will be overriten
+- methods: set, delete, clear, has (search by keys) / properties: size
+
+# set
+
+- Unique unordered list of values
+- new Set([]) => convert Array to a Set
+- [ ...mySet ] => comnvert Set to Array
+- automatically remove duplicate values
+- cannot access value elements by index
+- methods: add, delete, clear, has (search by keys) / properties: size
+
+# linked list
+
+- good to adding and removing nodes at beginning
+- node based data structure
+- not to good retrieving nodes and searching
+- every node store the memory address of the next node
+- node: atomic unit of a linked list
+- node contains a value and pointer:
+  - value: a simple value
+  - pointer: connect to the next node of the chain
+- head: first node of a linked list
+- tail: last node of a linked list
+- a tail doesn't have next pointer (none or null)
+- unlike the arrays, the memory cells are not next to each other but spread across different cells
+- benefit of Linked List over an array is that you can delete and insert elements from the beginning in one step
+
 # stack
 
 - Last In First Out (LIFO)
 - only inserting elements at the end of a stack
-- adding items to the top is called push(param)
+- adding items to the top is called push(element)
 - removing items from the top is called pop()
 - used in Graph Traversal algorithm called DFS
 - efficient add and remove operations
-- limited use cases
 - process data in same order that received
-- stacks are arrays
 - beneficial as a temporary container
 
 # queue
 
 - First In First Out (FIFO)
-- only insert at the end, only read and removed from the front
-- adding items to the end is called enqueue(param)
-- removing items from the front is called dequeue()
+- only insert at the end (tail), only read and remove from the front (head)
+- adding items to the end (tail) is called enqueue(element)
+- removing items from the front (head) is called dequeue()
 - used in Graph Traversal algorithm called BFS
 - efficient add and remove operations
-- limited use cases
 - process data in same order that received
-- queues are arrays
 - beneficial as a temporary container
 
 # graphs
@@ -114,3 +129,9 @@
 - right has to be high than a current node (right > node)
 - you know what size to search based on parent node
 - not so good with unbalanced sizes
+
+# trie
+
+- a form of search tree where an internal node represents a split in the key space at a predetermined location, rather than split based on the actual key values seen;
+- a simple binary search trie for key values in the range 0 to 1023 would store all records with key values less than 512 on the left side of the tree, and all records with key values equal to or greater than 512 on the right side of the tree;
+- a trie is always a full tree;

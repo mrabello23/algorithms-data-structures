@@ -19,3 +19,4 @@
 10. Sorting Algorithms (Quick, Merge, Bubble)
 11. Dijkstra's Algorithm
 12. 0-1 Knapsack Problem
+13. Two Pointers

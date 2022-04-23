@@ -23,12 +23,12 @@ class Stack {
       return;
     }
 
-    console.log(`Removed item: ${this.items[this.count - 1]}`);
     this.count--;
+    console.log(`Removed item: ${this.items[this.count]}`);
     this.items.length = this.count;
   }
 
-  // Check top element in stack
+  // Get top element in stack
   peek() {
     if (this.isEmpty()) {
       console.log(`Stack is empty!`);
@@ -57,13 +57,6 @@ class Stack {
     this.items = [];
     this.count = 0;
     console.log(`Stack cleared!`);
-
-    this.print();
-  }
-
-  // print stack items
-  print() {
-    console.log(this);
   }
 }
 
@@ -82,6 +75,6 @@ stack.pop();
 stack.size();
 
 console.log(`Empty stack? ${stack.isEmpty()}`);
-stack.print();
+console.log(stack);
 
 stack.clear();
