@@ -119,6 +119,33 @@ class BinaryTree {
     return !this.find(data) ? false : true;
   }
 
+  // Distance between Root Node and First Leaf Node without 2 children
+  findMinHeight(node = this.root) {
+    if (!node) return -1;
+
+    let left = this.findMinHeight(node.left);
+    let right = this.findMinHeight(node.right);
+
+    if (left < right) return left + 1;
+    return right + 1;
+  }
+
+  // Distance between Root Node and Deep Node with children
+  findMaxHeight(node = this.root) {
+    if (!node) return -1;
+
+    let left = this.findMaxHeight(node.left);
+    let right = this.findMaxHeight(node.right);
+
+    if (left > right) return left + 1;
+    return right + 1;
+  }
+
+  // check if tree is balanced (difference between Max Height and Min Height need to be at most 1)
+  isBalanced() {
+    return this.findMinHeight() >= this.findMaxHeight() - 1;
+  }
+
   print() {
     console.log(this);
   }
@@ -135,6 +162,7 @@ tree.insert(10);
 tree.insert(5);
 tree.insert(15);
 tree.insert(8);
+tree.insert(25);
 
 console.log(`Min Node: ${tree.findMin()}`);
 console.log(`Max Node: ${tree.findMax()}`);
@@ -145,6 +173,10 @@ console.log(`isPresent 20 ? ${tree.isPresent(20)}`);
 tree.remove(5);
 console.log(`isPresent 5 ? ${tree.isPresent(5)}`);
 
-tree.print();
+console.log(`Min Height: ${tree.findMinHeight()}`);
+console.log(`Max Height: ${tree.findMaxHeight()}`);
 
+console.log(`Is Balanced? ${tree.isBalanced()}`);
+
+tree.print();
 tree.clear();

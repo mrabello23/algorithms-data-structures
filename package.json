@@ -12,6 +12,7 @@
     "bsearch": "node src/algorithms/binary-search.js",
     "frchar": "node src/algorithms/first-recurring-character.js",
     "graphtrav": "node src/algorithms/graph-traversal.js",
+    "treetrav": "node src/algorithms/tree-traversal.js",
     "factorial": "node src/algorithms/factorial.js",
     "ssort": "node src/algorithms/selection-sort.js",
     "isort": "node src/algorithms/insertion-sort.js",
@@ -25,7 +26,8 @@
     "set": "node src/data-structures/set.js",
     "map": "node src/data-structures/map.js",
     "btree": "node src/data-structures/binary-tree.js",
-    "tree": "node src/data-structures/tree.js"
+    "tree": "node src/data-structures/tree.js",
+    "htable": "node src/data-structures/hash-table.js"
   },
   "keywords": [],
   "author": "",
