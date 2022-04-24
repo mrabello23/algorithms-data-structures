@@ -1,16 +1,24 @@
-class Map {
+class CustomMap {
   constructor() {
-    this.size;
+    this.collection = {};
+    this.size = 0;
   }
 
   // add item to the Map
-  set() {}
+  set(key, value) {}
 
   // remove item of the Map
-  delete() {}
+  delete(key) {}
+
+  // get item by key
+  get(key) {}
 
   // search by keys
-  has() {}
+  has(key) {
+    return this.collection[key] || false;
+  }
+
+  values() {}
 
   // clear out the Map
   clear() {}
