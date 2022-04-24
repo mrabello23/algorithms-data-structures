@@ -1,26 +1,26 @@
 // Quadratic Time Complexity => O(n²)
-const selectionSort = (array) => {
-  for (let i = 0; i < array.length; i++) {
+const selectionSort = (arr) => {
+  const swap = (arr, i, j) => {
+    let temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+  };
+
+  for (let i = 0; i < arr.length; i++) {
     let min = i;
 
-    for (let j = i + 1; j < array.length; j++) {
-      if (array[j] < array[min]) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[j] < arr[min]) {
         min = j;
       }
     }
 
     if (i !== min) {
-      swap(array, i, min);
+      swap(arr, i, min);
     }
   }
 
-  return array;
-};
-
-const swap = (array, i, j) => {
-  let temp = array[i];
-  array[i] = array[j];
-  array[j] = temp;
+  return arr;
 };
 
 const dataset = [100, 20, 5, 2, 111];

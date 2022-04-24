@@ -47,3 +47,9 @@ The hash table suggested in the previous example is inappropriate for implementi
 - Set: Unordered list of data, no duplicates wanted;
 - Object (hash-table): key-value pairs of Unordered data;
 - Map: key-value pairs of ordered data, iterable data;
+
+# Content
+
+https://www.freecodecamp.org/news/10-common-data-structures-explained-with-videos-exercises-aaff6c06fb2b
+https://www.geeksforgeeks.org/data-structures/
+https://www.careerdrill.com/blog/coding-interview/choosing-the-right-data-structure-to-solve-problems/

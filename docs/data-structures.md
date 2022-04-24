@@ -1,40 +1,62 @@
-# array
+# Array
 
 - basic data structure
 - memory cells are next to each other
 - list of data elements accessed by an index
+- insertion order is kept
+- size adjusts dynamically
+- duplicate values are allowed
+- they are iterable: can use for-of loop
+- deletion and finding require extra work
 - quite efficient at searching if the elements are ordered
 - are not so efficient in some operations since you have to shift all elements when you delete or insert
 
-# hash table
+# Hash table (JS object / python dictionary)
 
-- object (JS) or dictionary (Python)
-- list of key-pair values
+- list of unordered key-value pairs
 - good for adding, removing and searching
-- warning with key collision
 - no keep any ordering
-- are faster than the arrays for lookups
+- warning with key collision
+- they are faster than the arrays for lookups
+- elements accessed via key (property name)
+- keys are uniques, values are not
+- If try to assign same keys as key of other object, the first one will be overriten
+- JS Objects are not iterable: can use only for-in loop
+- JS Object's keys have to be string, number or symbols
+- JS Objects only support 1 key object
+- JS Objects can store data and functionality (can have methods)
 
-# map
+# Map
 
 - Map objects hold a key/value pairs
-- Keep original order of a keys
-- objects or primitives can be used as key or value
+- keep original order of a keys
+- list of ordered key-value pairs
+- objects, arrays or primitives can be used as key or value
 - Map arbitrary values to other values
-- JS Objects only support 1 key object
-- If try to assign multiples objects as key of other simple object, it will be overriten
+- keys are uniques, values are not
+- if try to assign same keys as key of other object, the first one will be overriten
+- they are iterable: can use for-of loop
+- data storage optimized for data access
+- JS Maps can store pure data but cannot have functionalities (methods are not executable)
+- JS Maps was designed to be simple data stores objects
+- can simplify and improve data access compared to Objects
+- cannot access value elements by index (elements can accessed via method)
 - methods: set, delete, clear, has (search by keys) / properties: size
 
-# set
+# Set
 
 - Unique unordered list of values
+- duplicate values are NOT allowed
+- insertion order is NOT stored
+- they are iterable: can use for-of loop
+- size adjusts dynamically
+- cannot access value elements by index (elements can accessed via method)
+- deletion and finding elements is faster than Array
 - new Set([]) => convert Array to a Set
 - [ ...mySet ] => comnvert Set to Array
-- automatically remove duplicate values
-- cannot access value elements by index
 - methods: add, delete, clear, has (search by keys) / properties: size
 
-# linked list
+# Linked list
 
 - good to adding and removing nodes at beginning
 - node based data structure
@@ -49,8 +71,10 @@
 - a tail doesn't have next pointer (none or null)
 - unlike the arrays, the memory cells are not next to each other but spread across different cells
 - benefit of Linked List over an array is that you can delete and insert elements from the beginning in one step
+- can be helpul with memory management, when need to do lot of insertions at the beginning of lists
+- not so useful in JS because of dynamic arrays functionality
 
-# stack
+# Stack
 
 - Last In First Out (LIFO)
 - only inserting elements at the end of a stack
@@ -61,7 +85,7 @@
 - process data in same order that received
 - beneficial as a temporary container
 
-# queue
+# Queue
 
 - First In First Out (FIFO)
 - only insert at the end (tail), only read and remove from the front (head)
@@ -72,7 +96,7 @@
 - process data in same order that received
 - beneficial as a temporary container
 
-# graphs
+# Graphs
 
 - collection of nodes with edges in between
 - good to represent relationship beteween data
@@ -106,7 +130,7 @@
 - memory space requirements is higher than DFS
 - it is slower than DFS
 
-# trees
+# Trees
 
 - node based data structure
 - kind of a hierarchycal graph connected without cycles
@@ -122,7 +146,7 @@
   - pre-order: visit root node first, then go to the left node and then right node at last
   - post-order: visit left node first, then go to the right node and then root node at last
 
-# binary search tree
+# Binary search tree
 
 - Rule applied to all nodes: every node has up to two nodes, its left descendants are less than or equal to the current node and the right descendants are greater than the current node
 - specific type of tree used to search efficiently
@@ -132,7 +156,7 @@
 - you know what size to search based on parent node
 - not so good with unbalanced sizes
 
-# trie
+# Trie
 
 - a form of search tree where an internal node represents a split in the key space at a predetermined location, rather than split based on the actual key values seen;
 - a simple binary search trie for key values in the range 0 to 1023 would store all records with key values less than 512 on the left side of the tree, and all records with key values equal to or greater than 512 on the right side of the tree;

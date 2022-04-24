@@ -14,6 +14,7 @@
     "frchar": "node src/algorithms/first-recurring-character.js",
     "graph-trav": "node src/algorithms/graph-traversal.js",
     "factorial": "node src/algorithms/factorial.js",
+    "bbsort": "node src/algorithms/bubble-sort.js",
     "linked-list": "node src/data-structures/linked-list.js",
     "stack": "node src/data-structures/stack.js",
     "queue": "node src/data-structures/queue.js",
