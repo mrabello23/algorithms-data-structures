@@ -7,7 +7,7 @@ const bubbleSort = (arr) => {
   };
 
   for (let i = 0; i < arr.length; i++) {
-    for (let j = 1; j < arr.length; j++) {
+    for (let j = 1; j < arr.length - i; j++) {
       if (arr[j] < arr[j - 1]) {
         swap(arr, j, j - 1);
       }
@@ -17,5 +17,7 @@ const bubbleSort = (arr) => {
   return arr;
 };
 
-const dataset = [7, 3, 1, 4, 6, 2, 3, 5];
-console.log(bubbleSort(dataset));
+console.log(bubbleSort([7, 3, 1, 4, 6, 2, 3, 5]));
+console.log(bubbleSort([3, 1]));
+console.log(bubbleSort([4]));
+console.log(bubbleSort([]));
