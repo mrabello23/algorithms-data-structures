@@ -11,18 +11,15 @@ class Tree {
     this.root = null;
   }
 
-  insert(value, root = null) {
+  insert(value) {
     if (!this.root) {
       this.root = new Node(value);
       return;
     }
-
-    root = this.root;
-    this.insert(value, root);
   }
 
   find(value) {}
-
+  remove(value) {}
   print() {}
 }
 

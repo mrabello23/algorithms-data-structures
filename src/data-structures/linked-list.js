@@ -124,7 +124,7 @@ class LinkedList {
   }
 
   // Print list data
-  printListData() {
+  print() {
     let current = this.head;
 
     while (current) {
@@ -136,6 +136,8 @@ class LinkedList {
   }
 }
 
+module.exports = LinkedList;
+
 const list = new LinkedList();
 
 list.insertFirst(100);
@@ -146,6 +148,6 @@ list.printListData();
 list.getAtIndex(1);
 
 list.removeAtIndex(1);
-list.printListData();
+list.print();
 
 list.clearList();
