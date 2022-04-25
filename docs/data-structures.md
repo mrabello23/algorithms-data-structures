@@ -146,7 +146,7 @@
   - pre-order: visit root node first, then go to the left node and then right node at last
   - post-order: visit left node first, then go to the right node and then root node at last
 
-# Binary search tree
+# Binary tree
 
 - Rule applied to all nodes: every node has up to two nodes, its left descendants are less than or equal to the current node and the right descendants are greater than the current node
 - specific type of tree used to search efficiently
@@ -155,9 +155,37 @@
 - right has to be high than a current node (right > node)
 - you know what size to search based on parent node
 - not so good with unbalanced sizes
+- complete binary tree:
+  - every level, except the last, need to be completely filled from left to right
+  - all elements in one level need to be filled to down to next level
+- complete binary tree cannot have gaps between elements in an array representation (level by level)
+- complete binary tree minimum height need to be log(n)
 
 # Trie
 
 - a form of search tree where an internal node represents a split in the key space at a predetermined location, rather than split based on the actual key values seen;
 - a simple binary search trie for key values in the range 0 to 1023 would store all records with key values less than 512 on the left side of the tree, and all records with key values equal to or greater than 512 on the right side of the tree;
 - a trie is always a full tree;
+
+# Heap
+
+- specialized tree-based data structure
+- its a complete binary tree
+- elements always analyzed top to bottom. left to ti
+- its a special case of balanced binary tree where the root-node key is compared with its children and arranged accordingly
+- Min Heap: key present at root nodes must be less than keys presents at child nodes (descending order)
+- Max Heap: key present at root node must be greatest among the keys presents at all child nodes (ascending order)
+- Insertions need to be done from the leaf to the root, and after re-arrange the elements => O(log n). Always look for the next free spot from top to bottom and from left to right
+- Deletions need to be done from the root to the leafs, and after re-arrange the elements => O(log n)
+- Only the root node can be deleted on this data-structure
+- Heap is the better data structure to implement Priority Queues => O (log n)
+- Heap Sorting => O(n log n)
+  - its a improved version of selection sort
+  - create a max heap
+  - remove elements and reserve on free space
+- Creating a Heap => O(n log n) / Heapify => O(log n)
+- Mathematical formula:
+  - if a Node is at index i
+  - its left child is at index 2 \* i
+  - its right child is at index 2 \* i + 1
+  - its parent is at index i/2
