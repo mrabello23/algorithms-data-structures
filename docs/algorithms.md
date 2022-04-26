@@ -31,3 +31,6 @@
 - Dual Pivot Quick Sort is a bit faster than the original Quick Sort.
 - Why is Quick Sort so popular? It’s on average a very fast algorithm.
 - Tim Sort is a blazing-fast, space-efficient, stable sorting algorithm.
+
+https://medium.com/coding-at-dawn/sorts-in-60-seconds-speedy-javascript-interview-answers-on-sorting-acb72bdea8a2
+https://www.geeksforgeeks.org/why-quick-sort-preferred-for-arrays-and-merge-sort-for-linked-lists/

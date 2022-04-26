@@ -143,7 +143,7 @@ const list = new LinkedList();
 list.insertFirst(100);
 list.insertLast(300);
 list.insertAtIndex(200, 1);
-list.printListData();
+list.print();
 
 list.getAtIndex(1);
 

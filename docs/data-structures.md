@@ -129,6 +129,7 @@
 - every node store N child pointer
 - memory space requirements is higher than DFS
 - it is slower than DFS
+- traversal the graph in layers
 
 # Trees
 
