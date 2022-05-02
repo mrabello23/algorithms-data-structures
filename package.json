@@ -21,6 +21,7 @@
     "qsortv2": "node src/algorithms/quick-sort-v2.js",
     "qsortv3": "node src/algorithms/quick-sort-v3.js",
     "hsort": "node src/algorithms/heap-sort.js",
+    "msort": "node src/algorithms/merge-sort.js",
     "invbtree": "node src/algorithms/inverting-binary-tree.js",
     "revllist": "node src/algorithms/reverse-linked-list.js",
     "llist": "node src/data-structures/linked-list.js",
