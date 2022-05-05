@@ -1,10 +1,28 @@
 # Common Strategies
 
 - Divide & Conquer
-- Greedy method: problem solved in stages
-- Backtracking: also called as "Brute Force" method
-- Branch and Bound: useful on minimization problems
+- Greedy method
+- Backtracking
+- Branch and Bound
 - Dynamic Programming
+
+## Backtracking
+
+- also called as "Brute Force" approach
+- Brute force approach tries out all the possible solutions and chooses the desired/best solutions;
+- This approach is used to solve problems that have multiple solutions;
+- Space state tree is a tree representing all the possible states (solution or nonsolution) of the problem from the root as an initial state to the leaf as a terminal state;
+- Traversal Space state tree using Depth-First Search (Down deep and return)
+
+```
+Backtrack(x)
+  if x is not a solution
+    return false
+
+  if x is a new solution
+    add to list of solutions
+  backtrack(expand x)
+```
 
 ## Divide & Conquer (DAC)
 
@@ -28,11 +46,43 @@ DAC(Problem){
 }
 ```
 
+## Branch and Bound
+
+- used to solve optimization problems
+- only on minimization problems
+- Space state tree is a tree representing all the possible states (solution or nonsolution) of the problem from the root as an initial state to the leaf as a terminal state;
+- Traversal Space state tree using Breadth-First Search (Down by levels)
+
+## Greedy method
+
+- approach for solving a problem by selecting the best option available at the moment;
+- does not worry whether the current best result will bring the overall optimal result;
+- always goes for the local best choice to produce the global best result;
+- never reverses the earlier decision even if the choice is wrong;
+- It works in a top-down approach;
+- problem solved in stages;
+
+## Dynamic Programming
+
+- technique that helps to efficiently solve a class of problems that have overlapping subproblems and optimal substructure property;
+- If any problem can be divided into subproblems, which in turn are divided into smaller subproblems, and if there are overlapping among these subproblems, then the solutions to these subproblems can be saved for future reference;
+- store the result of subproblems so that when their solutions are required, they are at hand and we do not need to recalculate them (called "memoization");
+- memoization save time for computations of sub-problems we have already come across;
+- repeatedly calculating the value of the same subproblems to find the optimum solution;
+- bottom-up: By reversing the direction in which the algorithm works i.e. by starting from the base case and working towards the solution;
+
+## Greedy Algorithms vs Dynamic Programming
+
+- both tools for optimization problems
+- Greedy algorithms look for locally optimum solutions or in other words, a greedy choice, in the hopes of finding a global optimum;
+- Hence Greedy algorithms can make a guess that looks optimum at the time but becomes costly down the line and do not guarantee a globally optimum;
+- Dynamic programming, on the other hand, finds the optimal solution to subproblems and then makes an informed choice to combine the results of those subproblems to find the most optimum solution;
+
 # Optimization problems (Maximization / Minimization)
 
 - usually have a minimum or maximum constraint
 - possible many feasible solutions, but just 1 optimal solution
-- Common Strategies for this use-case: Greedy method, Dynamic Programming, Branch and Bound;
+- Common Strategies for this use-case: Greedy method, Dynamic Programming, Branch and Bound (only minimization);
 
 # Sorting Algorithms
 
