@@ -1,4 +1,4 @@
-// Time Complexity => O(nlogn)
+// Time Complexity => O(n log n)
 const mergeSort = (arr) => {
   const merge = (arr1, arr2) => {
     let i = 0;

@@ -26,6 +26,7 @@
     "revllist": "node src/algorithms/reverse-linked-list.js",
     "diffarr": "node src/algorithms/diff-arrays.js",
     "rgoverlap": "node src/algorithms/range-overlap.js",
+    "maxprofit": "node src/algorithms/max-profit.js",
     "llist": "node src/data-structures/linked-list.js",
     "stack": "node src/data-structures/stack.js",
     "queue": "node src/data-structures/queue.js",

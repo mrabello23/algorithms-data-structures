@@ -43,7 +43,7 @@
 - cannot access value elements by index (elements can accessed via method)
 - methods: set, delete, clear, has (search by keys) / properties: size
 
-# Set
+# HashSet
 
 - Unique unordered list of values
 - duplicate values are NOT allowed
@@ -55,6 +55,7 @@
 - new Set([]) => convert Array to a Set
 - [ ...mySet ] => comnvert Set to Array
 - methods: add, delete, clear, has (search by keys) / properties: size
+- add, remove and searching operations take O(1) time complexity (constant)
 
 # Linked list
 
@@ -106,30 +107,6 @@
 - directed graphs: nodes are connected in one direction
 - undirected graphs: nodes are connected in both directions
 - cycle: when an edge points to same node
-
-# Depth-first search (dfs) graph
-
-- traversal the graph using a stack
-- edge-based technique
-- used for finding or traversing graphs or trees in depth-ward direction
-- execution begins at the root node and explores each branch before backtracking
-- uses a stack data structure to remember, to get the subsequent vertex, and to start a search, whenever a dead-end appears in any iteration
-- Last In First Out (LIFO) mode
-- every node store only 1 child pointer
-- memory space requirements is less than BFS
-
-# Breadth-first search (bfs) graph
-
-- traversal the graph using a queue
-- vertex-based technique for finding the shortest path in the graph
-- used to graph data or searching tree or traversing structures
-- efficiently visits and marks all the key nodes in a graph in an accurate breadthwise fashion
-- selects a single node (initial or source point) in a graph and then visits all the nodes adjacent to the selected node. Once the algorithm visits and marks the starting node, then it moves towards the nearest unvisited nodes and analyses them
-- First In First Out (FIFO) mode
-- every node store N child pointer
-- memory space requirements is higher than DFS
-- it is slower than DFS
-- traversal the graph in layers
 
 # Trees
 

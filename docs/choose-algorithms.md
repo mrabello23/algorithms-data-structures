@@ -102,3 +102,4 @@ DAC(Problem){
 - Quick Sort requires a lot of this kind of access. In linked list to access i’th index, we have to travel each and every node from the head to i’th node as we don’t have continuous block of memory. Therefore, the overhead increases for quick sort. Merge sort accesses data sequentially and the need of random access is low;
 - It uses "Divide and Conquer" strategy;
 - Preferred for large size list;
+- One of the fastest sort algorithm
