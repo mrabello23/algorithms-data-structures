@@ -50,13 +50,13 @@ const postOrder = (tree) => {
 const levelOrder = (tree) => {
   if (!tree.root) return null;
 
-  const result = [];
+  const result = []; // have been seen / precessed
   const queue = [];
 
   queue.push(tree.root);
 
   while (queue.length > 0) {
-    let node = queue.shift(); // mutate array
+    let node = queue.shift(); // mutate list
     result.push(node.data);
 
     if (node.left) queue.push(node.left);
@@ -83,4 +83,5 @@ btree.insert(7);
 console.log(`inOrder traversal: ${inOrder(btree)}`);
 console.log(`preOrder traversal: ${preOrder(btree)}`);
 console.log(`postOrder traversal: ${postOrder(btree)}`);
+
 console.log(`levelOrder traversal: ${levelOrder(btree)}`);
