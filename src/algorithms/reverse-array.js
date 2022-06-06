@@ -3,6 +3,7 @@
  * @param {array} arr
  * @returns {array}
  */
+// Linear Time Complexity => O(n)
 const reverseArray = (arr) => {
   // traversal half array
   for (let i = 0; i < arr.length / 2; i++) {

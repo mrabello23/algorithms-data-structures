@@ -32,6 +32,7 @@
     "ccipher": "node src/algorithms/caesar-cipher.js",
     "rword": "node src/algorithms/reverse-words.js",
     "rarr": "node src/algorithms/reverse-array.js",
+    "twosum": "node src/algorithms/two-sum.js",
     "llist": "node src/data-structures/linked-list.js",
     "stack": "node src/data-structures/stack.js",
     "queue": "node src/data-structures/queue.js",
